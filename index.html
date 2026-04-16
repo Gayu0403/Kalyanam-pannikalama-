@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kalyanam Proposal 💍</title>
+
+<style>
+    body {
+        text-align: center;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(to right, #ff758c, #ff7eb3);
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid white;
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+        color: white;
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
+    p {
+        color: white;
+        font-size: 18px;
+    }
+
+    button {
+        padding: 15px 30px;
+        font-size: 18px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        margin: 20px;
+    }
+
+    #yesBtn {
+        background-color: #ff4d88;
+        color: white;
+    }
+
+    #noBtn {
+        background-color: #333;
+        color: white;
+        position: absolute;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <!-- YOUR PHOTO -->
+    <img src="https://github.com/Gayu0403/Kalyanam-pannikalama-/blob/main/IMG_20260416_144439.jpg" alt="Her Photo">
+
+    <h1>Kalyanam pannikalama? 💍</h1>
+    <p>Think properly... this is your life decision 😌</p>
+    <p>Enna kalyanam pannikala na sooniyam vachirven 🤣💀</p>
+
+    <button id="yesBtn" onclick="yesClicked()">Yes 😍</button>
+    <button id="noBtn" onmouseover="moveButton()">No 😢</button>
+</div>
+
+<script>
+function yesClicked() {
+    document.body.innerHTML = `
+        <h1 style="color:white; margin-top:100px;">
+        Ayyoo finally 😭💖💍
+        </h1>
+        <p style="color:white; font-size:25px;">
+        Escape illa... life long deal confirm 😏
+        </p>
+    `;
+}
+
+function moveButton() {
+    let button = document.getElementById("noBtn");
+    let x = Math.random() * (window.innerWidth - 100);
+    let y = Math.random() * (window.innerHeight - 50);
+
+    button.style.left = x + "px";
+    button.style.top = y + "px";
+}
+</script>
+
+</body>
+</html>
